@@ -14,6 +14,16 @@ class PrinterConstraints:
     max_items: int
 
 def optimize_printing(print_jobs: List[Dict], constraints: Dict) -> Dict:
+    """
+    Optimizes the 3D printing queue according to the priorities and limitations of the printer
+
+    Args:
+        print_jobs: List of print jobs
+        constraints: Printer limitations
+
+    Returns:
+        Dict with print order and total time
+    """
     jobs = [PrintJob(**job) for job in print_jobs]                  # Convert to a list of PrintJob objects
     jobs.sort(key=lambda job: (job.priority, job.print_time))       # Sort by priority (highest - first), then by print time
     

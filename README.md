@@ -1,13 +1,41 @@
 # GoIT Algo 2 HW 2
 
 ## Task 1
-Оптимізує чергу 3D-друку згідно з пріоритетами та обмеженнями принтера
+
+### Optimizes the 3D printing queue according to the priorities and limitations of the printer
 
 Args:
 
-    print_jobs: Список завдань на друк
-    constraints: Обмеження принтера
+    print_jobs: List of print jobs
+    constraints: Printer limitations
 
 Returns:
 
-    Dict з порядком друку та загальним часом
+    Dict with print order and total time
+
+
+## Task 2
+
+### Finds the best way to cut using memoization
+
+Args:
+
+    length: rod length
+    prices: a list of prices, where prices[i] is the price of a rod of length i+1
+
+Returns:
+
+    Dict with maximum profit and a list of cuts
+
+
+
+### Finds the best way to cut using tabulation
+
+Args:
+
+    length: rod length
+    prices: a list of prices, where prices[i] is the price of a rod of length i+1
+
+Returns:
+
+    Dict with maximum profit and a list of cuts
